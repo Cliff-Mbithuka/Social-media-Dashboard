@@ -13,7 +13,6 @@
 --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
 --Desaturated-Blue: hsl(228, 34%, 66%);
 --White: hsl(0, 0%, 100%);
---White: hsl(0, 0%, 100%);
 --Very-Pale-Blue: hsl(225, 100%, 98%);
 --Light-Grayish-Blue: hsl(227, 47%, 96%);
 --Dark-Grayish-Blue: hsl(228, 12%, 44%);
@@ -26,16 +25,17 @@
 }
 body{
     font-family: "Inter", sans-serif;
+    background-color: hsl(232, 19%, 15%);
 }
 .container{
     width: 80%;
-    margin: 4em auto;
+    margin: 1.5em auto;
 }
 .head{
     display: flex;
     justify-content: space-between;
+    color: var(--Dark-Grayish-Blue);
     
-    background-color: aquamarine;
 }
 .handles{
     display: grid;
@@ -45,24 +45,63 @@ body{
     margin: 2.5em 0;
 }
 .social-handles{
-    background-color: var(--Very-Dark-Blue);
+    background-color: hsl(228, 28%, 20%);
     border-radius: 10px;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
+.nathanf{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+color: var(--Dark-Grayish-Blue);
+gap: 5px;
+}
+.today{
+    color: var(--Lime-Green);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+.red{
+    color: var(--Bright-Red);
+    gap: 5px;
+}
 h1{
     color: var(--White);
 }
-.social-handles p:nth-child(2) {
-    color: var(--Light-Grayish-Blue);
-  }
-.social-handles p:nth-child(4) {
-    color: var(--Lime-Green)
+.social-handles p:nth-child(3) {
+    color: var(--Dark-Grayish-Blue); 
   }
   .summary{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 120px 120px;
     gap: 20px;
+    margin-top: 2em;
+  }
+  .views{
+    background-color: hsl(228, 28%, 20%);
+   border-radius: 10px;
+   padding: 0 20px;
+  }
+  .reaction{
+    display: flex;
+    justify-content: space-between;
+   margin: 1.5em 0;
+   color: var(--Dark-Grayish-Blue);
+  }
+  .ranking{
+    display: flex;
+    justify-content: space-between;
+  }
+  .ranking div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .ranking h3{
+    color: var(--White)
   }
