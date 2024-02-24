@@ -35,11 +35,24 @@ body{
 .head{
     display: flex;
     justify-content: space-between;
-    color: hsl(228, 34%, 66%);
-    
+    color: hsl(228, 34%, 66%);  
+}
+.toogle{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.toogle p{
+  margin-right: 10px;
 }
 .toogle-hr{
   display: none;
+}
+.bi{
+font-size: 2em;
+width: 20px;
+margin-right: 20px;
+color: var(--Toggle);
 }
 .handles{
     display: grid;
@@ -129,6 +142,9 @@ h1{
       margin-bottom: 20px;
 
     }
+    .toogle{
+      justify-content: space-between;
+    }
     .toogle-hr{
       display: block;
       margin-bottom: 20px;
@@ -138,9 +154,6 @@ h1{
       display: grid;
       grid-template-columns: 1fr;
       row-gap: 20px;
-    }
-    .social-handles{
-      
     }
     .summary{
       display: grid;
