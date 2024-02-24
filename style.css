@@ -26,6 +26,7 @@
 body{
     font-family: "Inter", sans-serif;
     background-color: hsl(232, 19%, 15%);
+    font-weight: 400;
 }
 .container{
     width: 80%;
@@ -34,8 +35,11 @@ body{
 .head{
     display: flex;
     justify-content: space-between;
-    color: var(--Dark-Grayish-Blue);
+    color: hsl(228, 34%, 66%);
     
+}
+.toogle-hr{
+  display: none;
 }
 .handles{
     display: grid;
@@ -51,6 +55,8 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 1em 0;
+    color: hsl(228, 34%, 66%);
 }
 .nathanf{
     display: flex;
@@ -58,24 +64,31 @@ body{
     margin-bottom: 15px;
 color: var(--Dark-Grayish-Blue);
 gap: 5px;
+font-weight: bold;
+}
+.followers{
+  letter-spacing: 3px;
 }
 .today{
     color: var(--Lime-Green);
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5px;
     margin-top: 15px;
 }
 .red{
     color: var(--Bright-Red);
     gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 h1{
     color: var(--White);
+    font-weight: bold;
 }
-.social-handles p:nth-child(3) {
-    color: var(--Dark-Grayish-Blue); 
-  }
   .summary{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,17 +99,19 @@ h1{
   .views{
     background-color: hsl(228, 28%, 20%);
    border-radius: 10px;
-   padding: 0 20px;
+   padding: 10px 20px;
   }
   .reaction{
     display: flex;
     justify-content: space-between;
-   margin: 1.5em 0;
-   color: var(--Dark-Grayish-Blue);
+   margin: 1.2em 0;
+   color: hsl(228, 34%, 66%);
   }
   .ranking{
     display: flex;
     justify-content: space-between;
+   align-items: end;
+   margin-bottom: 10px;
   }
   .ranking div{
     display: flex;
@@ -104,4 +119,32 @@ h1{
   }
   .ranking h3{
     color: var(--White)
+  }
+  @media (max-width: 550px) {
+    .head{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .heading{
+      margin-bottom: 20px;
+
+    }
+    .toogle-hr{
+      display: block;
+      margin-bottom: 20px;
+     border: 1px solid var(--Dark-Grayish-Blue);
+    }
+    .handles{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+    .social-handles{
+      
+    }
+    .summary{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
   }
